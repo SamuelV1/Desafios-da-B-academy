@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "dia1",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.4.4"
+  },
+  "description": "Primeiro, instale as dependências do projeto e coloque o servidor para rodar em modo de desenvolvimento.",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
+}
