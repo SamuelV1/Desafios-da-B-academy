@@ -6,17 +6,23 @@ body {
   color: #2c3e50;
   margin-top: 60px;
 }
+body{
+  background-color: #f1f3fb;
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
 body img{
   height: 60px;
   width: 60px;
 }
 #myTable{
-  border-color: #5939F8;
-  border-style: solid;
   color: #000000;
-  border-width: 2px;
-  height: 100px;
   overflow: scroll;
+}
+table, th, td {
+  border: 2px solid #5939F8;
 }
 
 .toaster{
@@ -76,5 +82,47 @@ body img{
     opacity:1;
   }
 }
-
+ 
+.input_field{
+  border: 0;
+  padding: 0;
+  z-index: 1;
+  background-color: transparent;
+  border-bottom: 2px solid #eee;
+  font: inherit;
+  font-size: 14px;
+  line-height: 30px;
+    outline: 0;
+    
+    
+		border-bottom-color: #6658d3;
+          
+}
+.input{
+  display: flex;
+	flex-direction: column-reverse;
+	position: relative;
+  padding-top: 1.5rem;
+  padding-bottom: 15px;
+}
+.input_label {
+  color: #665856;
+}
+.action-button {
+	font: inherit;
+	font-size: 20px;
+	padding: 0.6em;
+	width: 80%;
+	font-weight: 500;
+	background-color: #6658d3;
+	border-radius: 6px;
+	color: #FFF;
+  border: 0;
+  margin-bottom: 15px;
+}
+  label{
+    color:  #6658d3;
+    position: absolute;
+    top: 0.4rem;
+  }
 

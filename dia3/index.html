@@ -12,13 +12,34 @@
 <body>
   <h4> use esse link caso n queira buscar um url: http://placehold.it/40x40?text=IMG</h4>
   <form id="formulario">
-    <input type="text" id="Nome" required placeholder="Seu nome completo">
-    <input type="text" id="Marca-Veiculo" required placeholder="marca Do veiculo">
-    <input type="number" id="anoVeiculo" placeholder="anoVeiculo">
-    <input type="text" id="fotoVeiculo" placeholder="ulr da foto do veiculo">
-    <input type="color" id="CorVeiculo" placeholder="cor">
+    <div class="input">
+      <label>Nome</label>
+      <input class="input_field" type="text" id="Nome" required placeholder="Seu nome completo">
+    </div>
 
-    <input type="submit" value="Submit">
+    <div class="input">
+      <label>Brand</label>
+      <input class="input_field" type="text" id="Marca-Veiculo" required placeholder="marca Do veiculo">
+    </div>
+
+    <div class="input">
+      <label>Ano Do Veiculo</label>
+      <input class="input_field" type="number" id="anoVeiculo" placeholder="anoVeiculo">
+    </div>
+
+    <div class="input">
+      <label>Url Veiculo</label>
+      <input class="input_field" type="text" id="fotoVeiculo" placeholder="ulr da foto do veiculo">
+    </div>
+
+    <div class="input">
+      <label>Cor </label>
+      <input type="color" id="CorVeiculo" placeholder="cor">
+    </div>
+
+
+
+    <input class='action-button' type="submit" value="Submit">
   </form>
   <h3 id="Nomes">Nome:</h3>
   <div id="colorcontainer">

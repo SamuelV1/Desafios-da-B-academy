@@ -14,13 +14,34 @@
   </span>
 
   <form id="formulario">
-    <input type="text" id="fotoVeiculo" placeholder="ulr da foto do veiculo">
-    <input type="text" id="Marca-Veiculo" required placeholder="marca Do veiculo">
-    <input type="number" id="anoVeiculo" placeholder="anoVeiculo">
-    <input type="text" id="placaVeiculo" placeholder="Placadoveiculo">
-    <input type="color" id="CorVeiculo" placeholder="cor">
+    <div class="input">
+      <label>Placa</label>
+      <input class="input_field" type="text" id="placaVeiculo" required placeholder="placa Do veiculo">
+    </div>
 
-    <input type="submit" value="Submit">
+    <div class="input">
+      <label>Brand</label>
+      <input class="input_field" type="text" id="Marca-Veiculo" required placeholder="marca Do veiculo">
+    </div>
+
+    <div class="input">
+      <label>Ano Do Veiculo</label>
+      <input class="input_field" type="number" id="anoVeiculo" placeholder="anoVeiculo">
+    </div>
+
+    <div class="input">
+      <label>Url Veiculo</label>
+      <input class="input_field" type="text" id="fotoVeiculo" placeholder="ulr da foto do veiculo">
+    </div>
+
+    <div class="input">
+      <label>Cor </label>
+      <input type="color" id="CorVeiculo" placeholder="cor">
+    </div>
+
+
+
+    <input class='action-button' type="submit" value="Submit">
   </form>
 
   <table id="myTable">
@@ -34,25 +55,25 @@
     </tr>
     <tr>
       <td><img src="http://placehold.it/40x40?text=IMG" alt=""></td>
-      <td>viper</td>
-      <td>88</td>
-      <td>purple</td>
-      <td>ABCD-AA</td>
+      <td>placeholder</td>
+      <td>2003</td>
+      <td>placeholder</td>
+      <td>placeholder</td>
 
     </tr>
     <tr>
       <td><img src="http://placehold.it/40x40?text=IMG" alt=""></td>
-      <td>viper</td>
-      <td>88</td>
-      <td>purple</td>
-      <Td>ABBCC-AA</Td>
+      <td>placeholder</td>
+      <td>placeholder</td>
+      <td>placeholder</td>
+      <Td>placeholder</Td>
     </tr>
     <tr>
       <td><img src="http://placehold.it/40x40?text=IMG" alt=""></td>
-      <td>viper</td>
-      <td>88</td>
-      <td>purple</td>
-      <td>ABBB</td>
+      <td>placehold</td>
+      <td>placeholder</td>
+      <td>placeholder</td>
+      <td>placeholder</td>
     </tr>
   </table>
   <script type="module" src="/main.js"></script>

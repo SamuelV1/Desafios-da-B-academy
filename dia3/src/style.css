@@ -6,6 +6,17 @@
   color: #2c3e50;
   margin-top: 60px;
 }
+Body{
+  background-color: #f1f3fb;
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+input {
+	appearance: none;
+	border-radius: 0;
+}
 
 #colorcontainer{
   display: flex;
@@ -32,3 +43,45 @@ table img{
   height: 100px;
    width: 100px;
 }
+.input_field{
+  border: 0;
+  padding: 0;
+  z-index: 1;
+  background-color: transparent;
+  border-bottom: 2px solid #eee;
+  font: inherit;
+  font-size: 14px;
+  line-height: 30px;
+    outline: 0;
+    
+    
+		border-bottom-color: #6658d3;
+          
+}
+.input{
+  display: flex;
+	flex-direction: column-reverse;
+	position: relative;
+  padding-top: 1.5rem;
+  padding-bottom: 15px;
+}
+.input_label {
+  color: #665856;
+}
+.action-button {
+	font: inherit;
+	font-size: 20px;
+	padding: 0.6em;
+	width: 80%;
+	font-weight: 500;
+	background-color: #6658d3;
+	border-radius: 6px;
+	color: #FFF;
+  border: 0;
+  margin-bottom: 15px;
+}
+  label{
+    color:  #6658d3;
+    position: absolute;
+    top: 0.4rem;
+  }
