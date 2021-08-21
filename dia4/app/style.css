@@ -1,0 +1,80 @@
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+body img{
+  height: 60px;
+  width: 60px;
+}
+#myTable{
+  border-color: #5939F8;
+  border-style: solid;
+  color: #000000;
+  border-width: 2px;
+  height: 100px;
+  overflow: scroll;
+}
+
+.toaster{
+  display: none;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 120px;
+  height: 50px;
+  font-size: 14px;
+  background-color: crimson;
+  
+}
+
+.show{
+  display: flex;
+}
+.fade-in {
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+
