@@ -12,10 +12,12 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+    background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
 }
 body img{
-  height: 60px;
-  width: 60px;
+  height: 100px;
+    width: 160px;
+    display: block;
 }
 #myTable{
   color: #000000;
@@ -30,12 +32,12 @@ table {
   display: none;
   position: absolute;
   top: 10%;
-  right: 10%;
-  width: 120px;
-  height: 50px;
+  right: 3%;
+  border-radius: 15px;
+  padding: 15px;
   font-size: 14px;
-  background-color: crimson;
-  
+  width: fit-content;
+    height: fit-content;
 }
 
 .show{
@@ -144,3 +146,14 @@ Td{
   border: 2px solid #5939F8;
 }
 
+#excluir{
+  border: none;
+  appearance: none;
+  background: #e00707;
+  border-radius: 3px;
+  padding: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  height: 45px;
+    width: 45px;
+}

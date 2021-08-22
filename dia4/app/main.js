@@ -24,7 +24,7 @@ function addlisteners() {
 function iniciar() {
     fetch(`http://localhost:3333/cars`)
         .then(response => response.json())
-        .then(el => (el.length <= 0 ? errorHandler("Nenhum Veiculo encontrado no banco de dados") : el.map(el => { return insert_Row(el.brandModel, el.year, el.color, el.image, el.plate) })))
+        .then(el => (el.length <= 0 ? errorHandler("Nenhum Veiculo encontrado no banco de dados", true) : el.map(el => { return insert_Row(el.brandModel, el.year, el.color, el.image, el.plate) })))
         .catch(error => console.log(error))
 }
 
@@ -52,15 +52,23 @@ function serverStorage(marcaVeiculo, anoVeiculo, corVeiculo, fotoVeiculo, placaV
         }),
         headers: { "Content-type": "application/json; charset=UTF-8" }
     })
-        .then(response => response.json())
-        .then(json => json.error === true ? errorHandler(json.message) : insert_Row(marcaVeiculo, anoVeiculo, corVeiculo, fotoVeiculo, placaVeiculo))
+        .then(response => response.json())                                      // operadores ternarios tem algo contra arrow functions ou o uso de false true dentro delas dessa forma acabei criando uma 3 função meio inutil 
+        .then(json => json.error === true ? errorHandler(json.message, true) : registryCar(marcaVeiculo, anoVeiculo, corVeiculo, fotoVeiculo, placaVeiculo))
+}
+function registryCar(marcaVeiculo, anoVeiculo, corVeiculo, fotoVeiculo, placaVeiculo) {
+    insert_Row(marcaVeiculo, anoVeiculo, corVeiculo, fotoVeiculo, placaVeiculo)
+    errorHandler("Veiculo Registrado", false)
 }
 
 
-// toaster de erros e o principal e unico
-export default function errorHandler(mensaggem) {
+// toaster de erros & adaptado para ser de sucesso tbm
+export default function errorHandler(mensaggem, erro) {
     let toaster = document.getElementById('errorwindo')
     toaster.innerText = mensaggem
+    // se tiver erro vc sinaliza como true caso n tenha vira falso
+    if (erro === true) {
+        toaster.style.backgroundColor = '#ff3a1c'
+    } else toaster.style.backgroundColor = '#2ecc71'
     setTimeout(function () {
 
 
