@@ -21,8 +21,9 @@ body img{
   color: #000000;
   overflow: scroll;
 }
-table, th, td {
+table {
   border: 2px solid #5939F8;
+  border-collapse: collapse;
 }
 
 .toaster{
@@ -125,4 +126,12 @@ table, th, td {
     position: absolute;
     top: 0.4rem;
   }
+th{
+  background-color: #5939F8;
+}
+
+Td{
+
+  border: 2px solid #5939F8;
+}
 

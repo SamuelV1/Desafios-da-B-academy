@@ -11,7 +11,9 @@ Body{
   display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
+    align-content: center;    
+    align-items: center;
+
 }
 input {
 	appearance: none;
@@ -24,7 +26,12 @@ input {
   width: 500px;
 }
 table, th, td {
-  border: 1px solid black;
+  border: 2px solid #5939F8;
+  border-collapse: collapse;
+}
+.tabble{
+  display: flex;
+  justify-content: center;
 }
 
 table img{
@@ -34,10 +41,11 @@ table img{
 #formulario{
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 300px;
   align-content: flex-end;
   flex-wrap: wrap;
   align-items: center;
+ 
 }
 .corEscolhida{
   height: 100px;
