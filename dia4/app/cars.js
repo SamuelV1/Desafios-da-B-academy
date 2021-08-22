@@ -49,3 +49,4 @@ function removeFromDatabase(placa, index) {
         .then(json => (json.error === true ? errorHandler(json.message) : table.deleteRow(index)))
 }
 
+

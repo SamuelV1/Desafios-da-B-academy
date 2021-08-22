@@ -93,12 +93,11 @@ table {
   font: inherit;
   font-size: 14px;
   line-height: 30px;
-    outline: 0;
-    
-    
+    outline: 0; 
 		border-bottom-color: #6658d3;
           
 }
+
 .input{
   display: flex;
 	flex-direction: column-reverse;
@@ -120,6 +119,16 @@ table {
 	color: #FFF;
   border: 0;
   margin-bottom: 15px;
+  transition: filter 0.2s;
+}
+.action-button:hover{
+  cursor: pointer;
+  filter: brightness(0.9);
+  
+}
+.action-button:active{
+  filter: brightness(0.5);
+
 }
   label{
     color:  #6658d3;
